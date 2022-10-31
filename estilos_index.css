@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+    body  {
+        background: #fff url(images/dedos_hilo_rojo.png) repeat;
+        }
+
+h1 {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 24px;
+   
+    text-align: center;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 0 24px;
+
+    text-align: center;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    margin: 0 0 24px;
+
+    text-align: center;
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-family: 'Amatic SC', cursive;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 15px;
+    margin: 0 0 24px;
+ 
+    text-align: center;
+}
+
+.subheader {
+    font-size: 26px;
+    font-weight: 300;
+    color: #ffcc66;
+    margin: 0 0 24px;
+}
+
+a {
+    color: #ff9900;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+    a:hover {
+        color: #ffcc66
+    }
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 1s;
+    text-align: center;
+}
+
+    .content > div {
+        margin: 0 auto;
+
+        width: 50%;
+        height: 100%;
+        grid-area: 50 / 50 / 50 / 50 / 50;
+    }
+
+
+.fadeTop {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.fadeRight {
+    opacity: 0;
+    transform: translate(10vh, 0vh);
+    transition: all 1s;
+}
+
+.fadeLeft {
+    opacity: 0;
+    transform: translate(-10vh, 0vh);
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.relativeContainer {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+#botonQueSeMueve {
+    position: absolute;
+    top: 80px;
+    left: 300px;
+}
+
+.relativeContainer2 {
+    position: relative;
+    width: 700px;
+    height: 500px;
+}
+
+#boton2 {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
